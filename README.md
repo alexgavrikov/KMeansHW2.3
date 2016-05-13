@@ -17,6 +17,7 @@
 сервер с кластером способны обслужить несоклько запросов на kmeans-job.
 
 Запуск сервера:
+
 	server_main port_for_slaves slaves_num port_for_clients k_means_jobs_num
 Например:
 	./server_main 1234 2 1235 1
