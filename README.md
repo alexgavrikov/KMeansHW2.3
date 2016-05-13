@@ -55,9 +55,11 @@
 
 Формат вывода центроидов в файл:
 
- centroid_id:0 \t component \t component \t ... \t component
-...
- centroid_id:K-1 \t component \t component \t ... \t component
+	centroid_id:0 \t component \t component \t ... \t component
+	
+	...
+	
+	centroid_id:K-1 \t component \t component \t ... \t component
  
 Правила общения между клиентом и сервером:
 Формат сообщения:
