@@ -20,21 +20,28 @@
 
 	server_main port_for_slaves slaves_num port_for_clients k_means_jobs_num
 Например:
+
 	./server_main 1234 2 1235 1
 
 Запуск раба:
+
 	slave_main port_to_bind
 Например:
+
 	./slave_main 1234
 
 Запуск клиента:
+
 	client_main number_of_clusters input_file output_file server_port
 Например:
+
 	./client_main 10 shad.learn ../out/K=10_slaves_count=2_centroids.txt 1235
 	
 Запуск теста:
+
 	test_main input_file_with_test_data input_file_with_centroids output_file
 Например:
+
 	/test_main shad.test ../out/K=10_slaves_count=2_centroids.txt ../out/K=10_slaves_count=2_RESULT.txt 
 
 
@@ -47,14 +54,17 @@
 
 
 Формат вывода центроидов в файл:
+
  centroid_id:0 \t component \t component \t ... \t component
 ...
  centroid_id:K-1 \t component \t component \t ... \t component
  
 Правила общения между клиентом и сервером:
 Формат сообщения:
+
 	content_length \t message
 Например:
+
 	3 \t OK
 
 Само сообщение представляет из себя последовательность чисел, разделённых разделителями '#' и ','.
